@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 
@@ -36,7 +37,13 @@ const Contact = () => {
           </div>
           <div className="flex items-center mt-16 space-x-3">
             <div className="w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer flex-col hover:bg-blue-800 transition-all duration-300">
-              <FaGithub className="text-white w-6 h-6" />
+              <Link
+                href="https://github.com/MarufSha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="text-white w-6 h-6" />
+              </Link>
             </div>
           </div>
         </div>
